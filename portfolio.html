@@ -15,27 +15,27 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&amp;family=Roboto:wght@400;500;700;900&amp;display=swap"
       rel="stylesheet"
     />
-    <link href="./css/styles.css" rel="stylesheet" />
+    <link href="./css/main.min.css" rel="stylesheet" />
   </head>
   <!-- body -->
   <body>
     <!-- header  -->
-    <header>
+    <header class="hdr">
       <div class="container flex">
-        <nav class="flex flex--menu-gap">
-          <a href="" class="logo__font"
+        <nav class="flex hdr__flex">
+          <a href="" class="logo logo__font"
             >Web<span class="logo__font logo__font--black">Studio</span></a
           >
-          <ul class="flex menu__list">
-            <li class="menu__item">
-              <a href="./index.html" class="menu__link">Agencja</a>
+          <ul class="flex hdr__menu-list">
+            <li class="hdr__menu-item">
+              <a href="./index.html" class="hdr__menu-link ">Agencja</a>
             </li>
 
-            <li class="menu__item">
-              <a href="./portfolio.html" class="menu__link is-active">Portfolio</a>
+            <li class="hdr__menu-item">
+              <a href="./portfolio.html" class="hdr__menu-link is-active">Portfolio</a>
             </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Kontakt</a>
+            <li class="hdr__menu-item">
+              <a href="#" class="hdr__menu-link">Kontakt</a>
             </li>
           </ul>
         </nav>
@@ -57,7 +57,7 @@
         </ul>
       </div>
     </header>
-    <!-- end header -->
+        <!-- end header -->
     <!-- Section 3 - portfolio -->
     <section class="section">
       <!-- container -->
@@ -317,14 +317,14 @@
         <div class="footer__social">
           <h3 class="footer__social-title">Dołącz do nas</h3>
           <!-- social link -->
-          <ul class="link-list link-list--padding">
+          <ul class="social__list footer__social-list">
             <!-- instagram link -->
-            <li class="link-list__item">
+            <li class="social__item">
               <a
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="link-list__link"
+                class="social__link"
               >
                 <svg width="44" height="44">
                   <use href="./images/icons.svg#icon-soc_link_instagram"></use>
@@ -332,12 +332,12 @@
               </a>
             </li>
             <!-- twitter link -->
-            <li class="link-list__item">
+            <li class="social__item">
               <a
                 href="https://twitter.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="link-list__link"
+                class="social__link"
               >
                 <svg width="44" height="44">
                   <use href="./images/icons.svg#icon-soc_link_twitter"></use>
@@ -345,12 +345,12 @@
               </a>
             </li>
             <!-- facebook link -->
-            <li class="link-list__item">
+            <li class="social__item">
               <a
                 href="https://www.facebook.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="link-list__link"
+                class="social__link"
               >
                 <svg width="44" height="44">
                   <use href="./images/icons.svg#icon-soc_link_facebook"></use>
@@ -358,12 +358,12 @@
               </a>
             </li>
             <!-- linkedin link -->
-            <li class="link-list__item">
+            <li class="social__item">
               <a
                 href="https://pl.linkedin.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="link-list__link"
+                class="social__link"
               >
                 <svg width="44" height="44">
                   <use href="./images/icons.svg#icon-soc_link_linkedin"></use>
@@ -373,23 +373,24 @@
           </ul>
           <!-- end social link -->
         </div>
-        <!-- save to newletter -->
-        <div class="flex newsletter__flex">
-          <form name="form-newsletter" class="form-newsletter">
-            <label class="form-newsletter__label" for="user_email">Zapisz się do newslettera</label>
-            <!-- <p> -->
-            <input
-              class="form-newsletter__input"
-              type="email"
-              name="data-email"
-              id="user_email"
-              placeholder="E-mail"
-              required
-            />
-            <button class="form-newsletter__btn-send" type="submit">
-              Zapisz się
-              <svg width="24" height="24"><use href="./images/icons.svg#icon-send"></use></svg>
-            </button>
+        <!-- save to newsletter -->
+        <div>
+          <form name="form-newsletter" class="newsletter">
+            <label class="newsletter__label" for="user_email">Zapisz się do newslettera</label>
+            <div class="flex newsletter__flex">
+              <input
+                class="newsletter__input"
+                type="email"
+                name="data-email"
+                id="user_email"
+                placeholder="E-mail"
+                required
+              />
+              <button class="newsletter__btn-send" type="submit">
+                Zapisz się
+                <svg width="24" height="24"><use href="./images/icons.svg#icon-send"></use></svg>
+              </button>
+            </div>
           </form>
         </div>
       </div>
