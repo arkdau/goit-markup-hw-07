@@ -1,144 +1,5 @@
 @use './../abstracts' as *;
 
-// .card {
-// width: 270px;
-// background: #ffffff;
-// box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14),
-//   0 2px 1px rgba(0, 0, 0, 0.2);
-// border-radius: 0 0 4px 4px;
-// }
-// .card__logo {
-//   box-sizing: border-box;
-//   width: 170px;
-//   padding: 16px 0 12px;
-//   border: 1px solid #afb1b8;
-//   border-radius: 4px;
-//   display: inline-block;
-// }
-// .card__logo:hover {
-// border-color: #2196f3;
-// }
-// .card__logo:hover {
-//   --color-icon-select: #2196f3;
-//   --color-icon: #fff;
-// }
-// .card__thumb {
-//   position: relative;
-//   display: inline-block;
-//   z-index: -1;
-// }
-// .card__box {
-//   background: #f5f4fa;
-//   border-radius: 4px;
-//   width: 270px;
-//   height: 120px;
-//   display: inline-flex;
-//   margin-bottom: 30px;
-// }
-// .card__icon {
-//   margin: 25px auto 25px auto;
-// }
-// .card__title-primary {
-//   font-weight: 700;
-//   text-transform: capitalize;
-//   text-align: left;
-//   font-size: 0.875em;
-//   line-height: 1.1428;
-//   letter-spacing: 0.03em;
-//   text-transform: uppercase;
-//   margin-bottom: 10px;
-// }
-// .card__title-secondary {
-//   font-weight: 500;
-//   font-size: 1rem;
-//   line-height: 1.1875;
-//   letter-spacing: 0.03em;
-//   margin-bottom: 10px;
-// }
-// .card__title-third {
-//   font-weight: 700;
-//   text-align: left;
-//   font-size: 1.125rem;
-//   line-height: 2;
-//   letter-spacing: 0.06em;
-//   margin-bottom: 10px;
-// }
-// .card__title-third--mb {
-//   margin-bottom: 0;
-// }
-// .card__caption {
-//   padding-top: 30px;
-//   border: none;
-//   border-left: 1px solid #eeeeee;
-//   border-bottom: 1px solid #eeeeee;
-//   border-right: 1px solid #eeeeee;
-// }
-// .card__caption--padding {
-//   padding: 20px 24px;
-// }
-// .card__description-primary {
-//   /* line-height: 1.875; */
-//   letter-spacing: 0.03em;
-//   color: #757575;
-//   font-size: 0.875em;
-//   line-height: 1.71;
-// }
-// .card__description-secondary {
-//   font-weight: 400;
-//   letter-spacing: 0.03em;
-//   color: #757575;
-//   font-size: 1rem;
-//   line-height: 1.1875;
-//   text-align: center;
-// }
-// .card__description-secondary--lh {
-//   line-height: 1.875;
-//   text-align: left;
-// }
-// .card__shadow:hover {
-//   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-//     1px 4px 6px rgba(0, 0, 0, 0.16);
-// }
-// .card__image {
-//   position: relative;
-//   width: 370px;
-//   height: 294px;
-//   overflow: hidden;
-// }
-// .card__overlay {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   display: flex;
-//   align-items: center;
-//   background-color: rgba(33, 150, 243, 0.9);
-//   transform: translateY(100%);
-//   transition-property: transform;
-//   transition-duration: 250ms;
-//   transition-timing-function: ease;
-// }
-// .card__item:hover .card__overlay {
-//   transform: translateY(0);
-// }
-// .card__overlay--text {
-//   color: var(--color-text-light);
-//   font-size: 1.125em;
-//   line-height: 1.6;
-//   margin: 0 24px;
-// }
-// .card__label {
-//   position: absolute;
-//   left: 0;
-//   right: 0;
-//   bottom: 0;
-//   text-align: center;
-//   color: var(--color-text-light);
-//   line-height: 4.375rem;
-//   margin: 0;
-//   background: rgba(47, 48, 58, 0.8);
-// }
 
 //////////////////////////////////////////////////////
 ///
@@ -148,7 +9,7 @@
   background: #ffffff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14),
     0 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0 0 4px 4;
+  border-radius: 0 0 4px 4px;
   &__logo {
     box-sizing: border-box;
     width: 170px;
@@ -182,7 +43,7 @@
     font-weight: 700;
     text-transform: capitalize;
     text-align: left;
-    font-size: 0.875em;
+    font-size: 0.875rem;
     line-height: 1.1428;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -265,9 +126,10 @@
   }
   &__overlay--text {
     color: var(--color-text-light);
-    font-size: 1.125em;
+    font-size: 1.125rem;
     line-height: 1.6;
     margin: 0 24px;
+    letter-spacing: 0.03em;
   }
   &__label {
     position: absolute;
